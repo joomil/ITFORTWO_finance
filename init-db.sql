@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS prices (
+    id SERIAL PRIMARY KEY,
+    ticker VARCHAR(20) NOT NULL,
+    price_date DATE NOT NULL,
+    price DOUBLE PRECISION NOT NULL,
+    inserted_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (ticker, price_date)
+);

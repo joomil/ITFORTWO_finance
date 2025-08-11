@@ -1,0 +1,6 @@
+redis
+pandas
+yfinance
+psycopg2-binary
+python-dotenv
+schedule
